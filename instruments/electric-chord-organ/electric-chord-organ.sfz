@@ -1,0 +1,578 @@
+//------------------------------------------------------------------------------
+// A basic sfz template
+//------------------------------------------------------------------------------
+<control>
+default_path= // relative path of your samples
+
+<global>
+// parameters that affect the whole instrument go here.
+
+// *****************************************************************************
+// Your mapping starts here
+// *****************************************************************************
+
+<group> // 1
+
+  trigger=attack    // or release or first or legato
+  loop_mode=no_loop // or loop_continuous or one_shot or loop_sustain
+
+<region> sample=/*wav or flac file*/ key=// or lokey= hikey= pitch_keycenter=
+
+
+<region>
+  sample=./samples/sure_sm57_d_chord_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_fs3_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_fs2_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_d3_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_g2_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_c4_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_f_chord_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_d_chord_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_as3_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_g_chord_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_fs3_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_e3_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_gs3_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_gs2_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_a2_high.wav
+
+<region>
+  sample=./samples/sure_sm57_c4_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_e2_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_e2_high.wav
+
+<region>
+  sample=./samples/rode_nt1_f3_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_g3_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_gs3_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_a2_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_g3_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_d2_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_as2_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_as3_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_c3_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_ds2_high.wav
+
+<region>
+  sample=./samples/rode_nt1_gs3_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_ds3_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_ds2_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_b3_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_b3_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_a2_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_d_chord_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_fs3_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_e3_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_bb_chord_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_as3_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_c_chord_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_a3_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_b2_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_cs2_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_cs3_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_c2_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_a_chord_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_g2_high.wav
+
+<region>
+  sample=./samples/sure_sm57_c2_high.wav
+
+<region>
+  sample=./samples/sure_sm57_fs2_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_fs3_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_a_chord_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_d2_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_g3_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_f3_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_e2_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_c4_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_f3_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_g2_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_e3_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_a3_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_d2_high.wav
+
+<region>
+  sample=./samples/rode_nt1_f2_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_gs2_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_gs3_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_a_chord_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_cs2_high.wav
+
+<region>
+  sample=./samples/sure_sm57_as3_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_as2_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_bb_chord_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_c_chord_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_g2_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_d3_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_g_chord_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_d_chord_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_d3_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_c2_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_b2_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_b2_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_f_chord_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_a3_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_bb_chord_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_fs2_high.wav
+
+<region>
+  sample=./samples/rode_nt1_ds2_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_ds3_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_a2_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_cs3_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_cs2_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_b3_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_a_chord_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_c3_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_c3_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_f2_high.wav
+
+<region>
+  sample=./samples/rode_nt1_gs2_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_ds3_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_ds2_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_bb_flat_chord_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_a2_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_b3_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_b2_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_c3_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_d3_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_a_chord_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_c2_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_as2_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_c3_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_c2_high.wav
+
+<region>
+  sample=./samples/sure_sm57_fs2_high.wav
+
+<region>
+  sample=./samples/rode_nt1_cs2_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_cs3_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_b2_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_f_chord_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_a3_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_c_chord_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_d_chord_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_f3_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_e3_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_g_chord_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_f2_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_as2_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_g2_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_d3_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_fs3_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_fs2_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_f_chord_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_cs2_high.wav
+
+<region>
+  sample=./samples/sure_sm57_f_chord_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_d2_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_e2_high.wav
+
+<region>
+  sample=./samples/rode_nt1_g3_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_as2_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_as3_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_c4_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_gs3_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_gs2_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_f3_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_gs2_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_a3_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_e2_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_bb_chord_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_a3_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_f_chord_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_b2_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_b3_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_ds2_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_ds3_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_g_chord_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_c2_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_d_chord_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_ds2_high.wav
+
+<region>
+  sample=./samples/sure_sm57_g_chord_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_cs3_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_ds3_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_c3_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_b3_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_cs3_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_cs2_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_c_chord_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_f2_high.wav
+
+<region>
+  sample=./samples/sure_sm57_a2_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_e3_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_e2_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_g_chord_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_f3_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_f2_low.wav
+
+<region>
+  sample=./samples/rode_nt1_c4_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_c_chord_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_ds3_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_c4_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_cs3_high.1.wav
+
+<region>
+  sample=./samples/sure_sm57_g3_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_d2_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_fs2_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_fs3_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_c_chord_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_bb_chord_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_as3_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_as2_med.1.wav
+
+<region>
+  sample=./samples/sure_sm57_g3_high.1.wav
+
+<region>
+  sample=./samples/rode_nt1_d3_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_d2_high.wav
+
+<region>
+  sample=./samples/rode_nt1_g2_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_f2_low.wav
+
+<region>
+  sample=./samples/rode_nt1_e3_med.1.wav
+
+<region>
+  sample=./samples/rode_nt1_a_chord_low.1.wav
+
+<region>
+  sample=./samples/sure_sm57_gs2_low.1.wav
+
+<region>
+  sample=./samples/rode_nt1_gs3_med.1.wav
