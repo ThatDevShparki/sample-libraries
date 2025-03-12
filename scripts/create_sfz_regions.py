@@ -23,9 +23,20 @@ def main():
                     mic_name, mic_serial, key, volume = file.split(".")[0].split("_")
 
                 mic = "_".join([mic_name, mic_serial])
+
+                lowvel, hivel = 0, 0
+                if volume == "low":
+                    lowvel, hivel = 1, 42
+                elif volume == "med":
+                    lowvel, hivel = 43, 85
+                else:
+                    lowvel, hivel = 86, 127
+
                 key = key.replace("s", "#").lower().strip()
 
-                print(f"<region> sample={os.path.join('./samples', file)} key={key}")
+                print(
+                    f"<region> sample={os.path.join('./samples', file)} key={key} lowvel={str(lowvel)} hivel={str(hivel)}"
+                )
 
 
 if __name__ == "__main__":
