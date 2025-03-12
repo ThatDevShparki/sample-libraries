@@ -35,7 +35,7 @@ def main():
                 key = key.replace("s", "#").lower().strip()
 
                 print(
-                    f"<region> sample={os.path.join('./samples', file)} key={key} lovel={str(lowvel)} hivel={str(hivel)}"
+                    f"<region> sample={os.path.join('./samples', file)} key={key} lovel={str(lowvel)} hivel={str(hivel)} amp_veltrack=0"
                 )
 
 
