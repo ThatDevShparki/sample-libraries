@@ -13,13 +13,12 @@ def main():
     for instrument_path in instrument_paths:
         for _, _, files in os.walk(os.path.join(instrument_path, "samples")):
             for file in files:
-                # skip chords ... for now
                 if "chord" in file:
-                    # print(file)
-                    if "flat" not in file:
-                        mic_name, mic_serial, key, _, volume = file.split(".")[0].split(
-                            "_"
-                        )
+                    if "flat" in file:
+                        continue
+
+                    mic_name, mic_serial, key, _, volume = file.split(".")[0].split("_")
+                    key = key + "1"
                 else:
                     mic_name, mic_serial, key, volume = file.split(".")[0].split("_")
 
