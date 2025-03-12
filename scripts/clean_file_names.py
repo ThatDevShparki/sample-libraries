@@ -8,7 +8,13 @@ def main():
     for path, _, files in os.walk(instruments_dir):
         if "samples" in path:
             for file in files:
-                new_file_name = file.replace(" ", "_").replace("#", "s").strip().lower()
+                new_file_name = (
+                    file.replace(" ", "_")
+                    .replace("#", "s")
+                    .replace(".1.", ".")
+                    .strip()
+                    .lower()
+                )
                 if "rode_nt1" in new_file_name and "rode_nt1_" not in new_file_name:
                     new_file_name = new_file_name.replace("rode_nt1", "rode_nt1_")
                 if "sure_sm57" in new_file_name and "sure_sm57_" not in new_file_name:
