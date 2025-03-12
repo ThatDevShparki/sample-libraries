@@ -15,9 +15,14 @@ def main():
             for file in files:
                 # skip chords ... for now
                 if "chord" in file:
-                    continue
+                    # print(file)
+                    if "flat" not in file:
+                        mic_name, mic_serial, key, _, volume = file.split(".")[0].split(
+                            "_"
+                        )
+                else:
+                    mic_name, mic_serial, key, volume = file.split(".")[0].split("_")
 
-                mic_name, mic_serial, key, volume = file.split(".")[0].split("_")
                 mic = "_".join([mic_name, mic_serial])
                 key = key.replace("s", "#").lower().strip()
 
