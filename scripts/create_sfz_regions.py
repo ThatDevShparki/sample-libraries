@@ -1,6 +1,21 @@
 import os
 
 
+
+
+
+
+sfz_
+
+
+
+
+
+
+
+
+
+
 def main():
     root_dir = os.path.join(os.path.dirname(__file__), "..")
     instruments_dir = os.path.abspath(os.path.join(root_dir, "instruments"))
