@@ -1,195 +1,211 @@
-//------------------------------------------------------------------------------
-// A basic sfz template
-//------------------------------------------------------------------------------
 <control>
-// default_path= // relative path of your samples
+default_path=./samples
 
 <global>
+ampeg_attack=0.04
+ampeg_release=0.45
+amp_veltrack=0
 
 <group>
-ampeg_attack=0.04 ampeg_release=0.45
-<region> sample=./samples/rode_nt1_b2_med.wav key=b2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_c2_med.wav key=c2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_b3_low.wav key=b3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_c3_low.wav key=c3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_a_chord_low.wav key=a1 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_cs3_low.wav key=c#3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_gs3_low.wav key=g#3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_as3_med.wav key=a#3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_as3_high.wav key=a#3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_as2_high.wav key=a#2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_a2_high.wav key=a2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_cs2_med.wav key=c#2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_a3_high.wav key=a3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_as2_low.wav key=a#2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_e2_high.wav key=e2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_gs2_med.wav key=g#2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_e3_high.wav key=e3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_b3_low.wav key=b3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_c3_low.wav key=c3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_f_chord_med.wav key=f1 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_b2_med.wav key=b2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_c2_med.wav key=c2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_a_chord_med.wav key=a1 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_c_chord_high.wav key=c1 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_cs3_med.wav key=c#3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_gs3_med.wav key=g#3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_ds3_high.wav key=d#3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_ds2_high.wav key=d#2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_as3_low.wav key=a#3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_c2_low.wav key=c2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_b2_low.wav key=b2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_c3_med.wav key=c3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_b3_med.wav key=b3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_c3_med.wav key=c3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_b3_med.wav key=b3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_f_chord_low.wav key=f1 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_d_chord_high.wav key=d1 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_c2_low.wav key=c2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_b2_low.wav key=b2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_bb_chord_high.wav key=bb1 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_cs2_low.wav key=c#2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_g2_high.wav key=g2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_g3_high.wav key=g3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_as2_med.wav key=a#2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_c2_high.wav key=c2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_c3_high.wav key=c3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_gs2_high.wav key=g#2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_gs3_high.wav key=g#3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_gs2_low.wav key=g#2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_f_chord_low.wav key=f1 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_f_chord_high.wav key=f1 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_bb_chord_med.wav key=bb1 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_fs3_low.wav key=f#3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_d2_low.wav key=d2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_e2_low.wav key=e2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_ds3_med.wav key=d#3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_d3_med.wav key=d3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_e3_med.wav key=e3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_d2_high.wav key=d2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_fs2_med.wav key=f#2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_d3_med.wav key=d3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_d3_high.wav key=d3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_e3_med.wav key=e3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_d2_low.wav key=d2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_e2_low.wav key=e2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_a_chord_med.wav key=a1 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_a_chord_high.wav key=a1 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_bb_chord_high.wav key=bb1 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_ds2_low.wav key=d#2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_cs2_high.wav key=c#2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_cs3_high.wav key=c#3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_c4_high.wav key=c4 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_e2_med.wav key=e2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_d2_med.wav key=d2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_fs3_med.wav key=f#3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_ds3_low.wav key=d#3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_e3_low.wav key=e3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_d3_low.wav key=d3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_fs2_high.wav key=f#2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_fs3_high.wav key=f#3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_f_chord_med.wav key=f1 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_b2_high.wav key=b2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_b3_high.wav key=b3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_e3_low.wav key=e3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_d3_low.wav key=d3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_fs2_low.wav key=f#2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_e2_med.wav key=e2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_d2_med.wav key=d2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_a_chord_low.wav key=a1 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_g_chord_high.wav key=g1 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_ds2_med.wav key=d#2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_f2_high.wav key=f2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_f3_high.wav key=f3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_gs3_med.wav key=g#3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_a3_med.wav key=a3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_as3_low.wav key=a#3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_c_chord_high.wav key=c1 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_g_chord_med.wav key=g1 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_c4_low.wav key=c4 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_a2_low.wav key=a2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_cs3_med.wav key=c#3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_c_chord_med.wav key=c1 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_d_chord_high.wav key=d1 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_d_chord_low.wav key=d1 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_c2_high.wav key=c2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_as2_med.wav key=a#2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_c3_high.wav key=c3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_fs3_high.wav key=f#3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_fs2_high.wav key=f#2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_c4_low.wav key=c4 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_gs2_low.wav key=g#2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_a2_low.wav key=a2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_a3_med.wav key=a3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_cs2_low.wav key=c#2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_g2_high.wav key=g2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_g3_high.wav key=g3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_c_chord_low.wav key=c1 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_gs3_low.wav key=g#3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_a3_low.wav key=a3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_as3_med.wav key=a#3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_g_chord_low.wav key=g1 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_c4_med.wav key=c4 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_cs3_high.wav key=c#3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_cs2_high.wav key=c#2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_cs3_low.wav key=c#3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_a2_med.wav key=a2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_c4_med.wav key=c4 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_as2_low.wav key=a#2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_d_chord_med.wav key=d1 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_gs2_med.wav key=g#2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_e2_high.wav key=e2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_e3_high.wav key=e3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_a2_med.wav key=a2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_cs2_med.wav key=c#2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_a3_low.wav key=a3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_a2_high.wav key=a2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_a3_high.wav key=a3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_ds3_low.wav key=d#3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_d_chord_med.wav key=d1 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_fs3_med.wav key=f#3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_gs3_high.wav key=g#3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_gs2_high.wav key=g#2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_f3_low.wav key=f3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_g3_low.wav key=g3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_bb_chord_low.wav key=bb1 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_f2_med.wav key=f2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_g2_med.wav key=g2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_ds2_high.wav key=d#2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_ds3_high.wav key=d#3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_f2_med.wav key=f2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_g2_med.wav key=g2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_c_chord_low.wav key=c1 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_f3_low.wav key=f3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_g3_low.wav key=g3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_f2_high.wav key=f2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_ds2_med.wav key=d#2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_f3_high.wav key=f3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_g_chord_high.wav key=g1 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_b2_high.wav key=b2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_b3_high.wav key=b3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_fs2_low.wav key=f#2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_g_chord_low.wav key=g1 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_g3_med.wav key=g3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_f3_med.wav key=f3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_bb_chord_med.wav key=bb1 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_as2_high.wav key=a#2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_g2_low.wav key=g2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_as3_high.wav key=a#3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_f2_low.wav key=f2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_f_chord_high.wav key=f1 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_ds3_med.wav key=d#3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_fs3_low.wav key=f#3 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/sure_sm57_d_chord_low.wav key=d1 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_ds2_low.wav key=d#2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_a_chord_high.wav key=a1 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_fs2_med.wav key=f#2 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_d2_high.wav key=d2 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/rode_nt1_d3_high.wav key=d3 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_g_chord_med.wav key=g1 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/rode_nt1_g2_low.wav key=g2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_f2_low.wav key=f2 lovel=1 hivel=42 amp_veltrack=0
-<region> sample=./samples/rode_nt1_c4_high.wav key=c4 lovel=86 hivel=127 amp_veltrack=0
-<region> sample=./samples/sure_sm57_c_chord_med.wav key=c1 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_g3_med.wav key=g3 lovel=43 hivel=85 amp_veltrack=0
-<region> sample=./samples/sure_sm57_f3_med.wav key=f3 lovel=43 hivel=85 amp_veltrack=0
+lovel=1
+hivel=42
+
+<region> sample=sure_sm57_b3_low.wav key=b3
+<region> sample=sure_sm57_c3_low.wav key=c3
+<region> sample=sure_sm57_a_chord_low.wav key=a_chord
+<region> sample=sure_sm57_cs3_low.wav key=c#3
+<region> sample=rode_nt1_gs3_low.wav key=g#3
+<region> sample=rode_nt1_as2_low.wav key=a#2
+<region> sample=rode_nt1_b3_low.wav key=b3
+<region> sample=rode_nt1_c3_low.wav key=c3
+<region> sample=rode_nt1_as3_low.wav key=a#3
+<region> sample=rode_nt1_c2_low.wav key=c2
+<region> sample=rode_nt1_b2_low.wav key=b2
+<region> sample=sure_sm57_f_chord_low.wav key=f_chord
+<region> sample=sure_sm57_c2_low.wav key=c2
+<region> sample=sure_sm57_b2_low.wav key=b2
+<region> sample=sure_sm57_cs2_low.wav key=c#2
+<region> sample=rode_nt1_gs2_low.wav key=g#2
+<region> sample=rode_nt1_f_chord_low.wav key=f_chord
+<region> sample=rode_nt1_fs3_low.wav key=f#3
+<region> sample=rode_nt1_d2_low.wav key=d2
+<region> sample=rode_nt1_e2_low.wav key=e2
+<region> sample=sure_sm57_d2_low.wav key=d2
+<region> sample=sure_sm57_e2_low.wav key=e2
+<region> sample=sure_sm57_ds2_low.wav key=d#2
+<region> sample=sure_sm57_ds3_low.wav key=d#3
+<region> sample=sure_sm57_e3_low.wav key=e3
+<region> sample=sure_sm57_d3_low.wav key=d3
+<region> sample=rode_nt1_e3_low.wav key=e3
+<region> sample=rode_nt1_d3_low.wav key=d3
+<region> sample=rode_nt1_fs2_low.wav key=f#2
+<region> sample=rode_nt1_a_chord_low.wav key=a_chord
+<region> sample=sure_sm57_as3_low.wav key=a#3
+<region> sample=rode_nt1_c4_low.wav key=c4
+<region> sample=sure_sm57_a2_low.wav key=a2
+<region> sample=rode_nt1_d_chord_low.wav key=d_chord
+<region> sample=sure_sm57_c4_low.wav key=c4
+<region> sample=sure_sm57_gs2_low.wav key=g#2
+<region> sample=rode_nt1_a2_low.wav key=a2
+<region> sample=rode_nt1_cs2_low.wav key=c#2
+<region> sample=rode_nt1_c_chord_low.wav key=c_chord
+<region> sample=sure_sm57_gs3_low.wav key=g#3
+<region> sample=rode_nt1_a3_low.wav key=a3
+<region> sample=rode_nt1_g_chord_low.wav key=g_chord
+<region> sample=rode_nt1_cs3_low.wav key=c#3
+<region> sample=sure_sm57_as2_low.wav key=a#2
+<region> sample=sure_sm57_a3_low.wav key=a3
+<region> sample=rode_nt1_ds3_low.wav key=d#3
+<region> sample=rode_nt1_f3_low.wav key=f3
+<region> sample=rode_nt1_g3_low.wav key=g3
+<region> sample=rode_nt1_bb_chord_low.wav key=bb_chord
+<region> sample=sure_sm57_c_chord_low.wav key=c_chord
+<region> sample=sure_sm57_f3_low.wav key=f3
+<region> sample=sure_sm57_g3_low.wav key=g3
+<region> sample=sure_sm57_fs2_low.wav key=f#2
+<region> sample=sure_sm57_g_chord_low.wav key=g_chord
+<region> sample=sure_sm57_g2_low.wav key=g2
+<region> sample=sure_sm57_f2_low.wav key=f2
+<region> sample=sure_sm57_fs3_low.wav key=f#3
+<region> sample=sure_sm57_d_chord_low.wav key=d_chord
+<region> sample=rode_nt1_ds2_low.wav key=d#2
+<region> sample=rode_nt1_g2_low.wav key=g2
+<region> sample=rode_nt1_f2_low.wav key=f2
+
+<group>
+lovel=43
+hivel=85
+
+<region> sample=rode_nt1_b2_med.wav key=b2
+<region> sample=rode_nt1_c2_med.wav key=c2
+<region> sample=rode_nt1_as3_med.wav key=a#3
+<region> sample=sure_sm57_cs2_med.wav key=c#2
+<region> sample=rode_nt1_gs2_med.wav key=g#2
+<region> sample=sure_sm57_f_chord_med.wav key=f_chord
+<region> sample=sure_sm57_b2_med.wav key=b2
+<region> sample=sure_sm57_c2_med.wav key=c2
+<region> sample=sure_sm57_a_chord_med.wav key=a_chord
+<region> sample=sure_sm57_cs3_med.wav key=c#3
+<region> sample=rode_nt1_gs3_med.wav key=g#3
+<region> sample=sure_sm57_c3_med.wav key=c3
+<region> sample=sure_sm57_b3_med.wav key=b3
+<region> sample=rode_nt1_c3_med.wav key=c3
+<region> sample=rode_nt1_b3_med.wav key=b3
+<region> sample=rode_nt1_as2_med.wav key=a#2
+<region> sample=sure_sm57_bb_chord_med.wav key=bb_chord
+<region> sample=sure_sm57_ds3_med.wav key=d#3
+<region> sample=sure_sm57_d3_med.wav key=d3
+<region> sample=sure_sm57_e3_med.wav key=e3
+<region> sample=rode_nt1_fs2_med.wav key=f#2
+<region> sample=rode_nt1_d3_med.wav key=d3
+<region> sample=rode_nt1_e3_med.wav key=e3
+<region> sample=rode_nt1_a_chord_med.wav key=a_chord
+<region> sample=rode_nt1_e2_med.wav key=e2
+<region> sample=rode_nt1_d2_med.wav key=d2
+<region> sample=rode_nt1_fs3_med.wav key=f#3
+<region> sample=rode_nt1_f_chord_med.wav key=f_chord
+<region> sample=sure_sm57_e2_med.wav key=e2
+<region> sample=sure_sm57_d2_med.wav key=d2
+<region> sample=sure_sm57_ds2_med.wav key=d#2
+<region> sample=sure_sm57_gs3_med.wav key=g#3
+<region> sample=rode_nt1_a3_med.wav key=a3
+<region> sample=rode_nt1_g_chord_med.wav key=g_chord
+<region> sample=rode_nt1_cs3_med.wav key=c#3
+<region> sample=rode_nt1_c_chord_med.wav key=c_chord
+<region> sample=sure_sm57_as2_med.wav key=a#2
+<region> sample=sure_sm57_a3_med.wav key=a3
+<region> sample=sure_sm57_as3_med.wav key=a#3
+<region> sample=rode_nt1_c4_med.wav key=c4
+<region> sample=sure_sm57_a2_med.wav key=a2
+<region> sample=sure_sm57_c4_med.wav key=c4
+<region> sample=rode_nt1_d_chord_med.wav key=d_chord
+<region> sample=sure_sm57_gs2_med.wav key=g#2
+<region> sample=rode_nt1_a2_med.wav key=a2
+<region> sample=rode_nt1_cs2_med.wav key=c#2
+<region> sample=sure_sm57_d_chord_med.wav key=d_chord
+<region> sample=sure_sm57_fs3_med.wav key=f#3
+<region> sample=sure_sm57_f2_med.wav key=f2
+<region> sample=sure_sm57_g2_med.wav key=g2
+<region> sample=rode_nt1_f2_med.wav key=f2
+<region> sample=rode_nt1_g2_med.wav key=g2
+<region> sample=rode_nt1_ds2_med.wav key=d#2
+<region> sample=rode_nt1_g3_med.wav key=g3
+<region> sample=rode_nt1_f3_med.wav key=f3
+<region> sample=rode_nt1_bb_chord_med.wav key=bb_chord
+<region> sample=rode_nt1_ds3_med.wav key=d#3
+<region> sample=sure_sm57_fs2_med.wav key=f#2
+<region> sample=sure_sm57_g_chord_med.wav key=g_chord
+<region> sample=sure_sm57_c_chord_med.wav key=c_chord
+<region> sample=sure_sm57_g3_med.wav key=g3
+<region> sample=sure_sm57_f3_med.wav key=f3
+
+<group>
+lovel=86
+hivel=127
+
+<region> sample=rode_nt1_as3_high.wav key=a#3
+<region> sample=rode_nt1_as2_high.wav key=a#2
+<region> sample=rode_nt1_a2_high.wav key=a2
+<region> sample=rode_nt1_a3_high.wav key=a3
+<region> sample=sure_sm57_e2_high.wav key=e2
+<region> sample=sure_sm57_e3_high.wav key=e3
+<region> sample=sure_sm57_c_chord_high.wav key=c_chord
+<region> sample=rode_nt1_ds3_high.wav key=d#3
+<region> sample=rode_nt1_ds2_high.wav key=d#2
+<region> sample=sure_sm57_d_chord_high.wav key=d_chord
+<region> sample=rode_nt1_bb_chord_high.wav key=bb_chord
+<region> sample=rode_nt1_g2_high.wav key=g2
+<region> sample=rode_nt1_g3_high.wav key=g3
+<region> sample=sure_sm57_c2_high.wav key=c2
+<region> sample=sure_sm57_c3_high.wav key=c3
+<region> sample=sure_sm57_gs2_high.wav key=g#2
+<region> sample=sure_sm57_gs3_high.wav key=g#3
+<region> sample=sure_sm57_f_chord_high.wav key=f_chord
+<region> sample=sure_sm57_bb_flat_chord_low.wav key=bb
+<region> sample=sure_sm57_d2_high.wav key=d2
+<region> sample=sure_sm57_d3_high.wav key=d3
+<region> sample=sure_sm57_a_chord_high.wav key=a_chord
+<region> sample=sure_sm57_bb_chord_high.wav key=bb_chord
+<region> sample=rode_nt1_cs2_high.wav key=c#2
+<region> sample=rode_nt1_cs3_high.wav key=c#3
+<region> sample=sure_sm57_c4_high.wav key=c4
+<region> sample=rode_nt1_fs2_high.wav key=f#2
+<region> sample=rode_nt1_fs3_high.wav key=f#3
+<region> sample=sure_sm57_b2_high.wav key=b2
+<region> sample=sure_sm57_b3_high.wav key=b3
+<region> sample=sure_sm57_g_chord_high.wav key=g_chord
+<region> sample=rode_nt1_f2_high.wav key=f2
+<region> sample=rode_nt1_f3_high.wav key=f3
+<region> sample=rode_nt1_c_chord_high.wav key=c_chord
+<region> sample=rode_nt1_d_chord_high.wav key=d_chord
+<region> sample=rode_nt1_c2_high.wav key=c2
+<region> sample=rode_nt1_c3_high.wav key=c3
+<region> sample=sure_sm57_fs3_high.wav key=f#3
+<region> sample=sure_sm57_fs2_high.wav key=f#2
+<region> sample=sure_sm57_g2_high.wav key=g2
+<region> sample=sure_sm57_g3_high.wav key=g3
+<region> sample=sure_sm57_cs3_high.wav key=c#3
+<region> sample=sure_sm57_cs2_high.wav key=c#2
+<region> sample=rode_nt1_e2_high.wav key=e2
+<region> sample=rode_nt1_e3_high.wav key=e3
+<region> sample=sure_sm57_a2_high.wav key=a2
+<region> sample=sure_sm57_a3_high.wav key=a3
+<region> sample=rode_nt1_gs3_high.wav key=g#3
+<region> sample=rode_nt1_gs2_high.wav key=g#2
+<region> sample=sure_sm57_ds2_high.wav key=d#2
+<region> sample=sure_sm57_ds3_high.wav key=d#3
+<region> sample=sure_sm57_f2_high.wav key=f2
+<region> sample=sure_sm57_f3_high.wav key=f3
+<region> sample=rode_nt1_g_chord_high.wav key=g_chord
+<region> sample=rode_nt1_b2_high.wav key=b2
+<region> sample=rode_nt1_b3_high.wav key=b3
+<region> sample=sure_sm57_as2_high.wav key=a#2
+<region> sample=sure_sm57_as3_high.wav key=a#3
+<region> sample=rode_nt1_f_chord_high.wav key=f_chord
+<region> sample=rode_nt1_a_chord_high.wav key=a_chord
+<region> sample=rode_nt1_d2_high.wav key=d2
+<region> sample=rode_nt1_d3_high.wav key=d3
+<region> sample=rode_nt1_c4_high.wav key=c4
+
+
+

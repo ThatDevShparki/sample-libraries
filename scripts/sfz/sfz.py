@@ -11,14 +11,14 @@ T = TypeVar('T')
 
 class SfzHeader:
     key: str
-    opcodes: dict[str, Any]
     subheaders: list[SfzHeader]
+    opcodes: dict[str, Any]
 
     def __init__(
         self,
         key: str,
-        opcodes: dict[str, Any] | None = None,
         subheaders: list[SfzHeader] | None = None,
+        opcodes: dict[str, Any] | None = None,
     ):
         self.key = key
         self.opcodes = opcodes or {}

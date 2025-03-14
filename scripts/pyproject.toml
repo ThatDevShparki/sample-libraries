@@ -5,11 +5,18 @@ description = ""
 authors = [{ name = "ThatDevShparki", email = "shparki@thatdev.io" }]
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["pydantic (>=2.10.6,<3.0.0)", "sfzlint (>=0.1.4,<0.2.0)"]
+dependencies = [
+    "pydantic (>=2.10.6,<3.0.0)",
+    "sfzlint (>=0.1.4,<0.2.0)",
+    "click (>=8.1.8,<9.0.0)",
+]
 
 
 [tool.poetry]
-package-mode = false
+packages = [{ include = "sfz", from = "." }]
+
+[tool.poetry.scripts]
+sfz = "sfz.cli:cli"
 
 [tool.ruff.format]
 quote-style = 'single'
