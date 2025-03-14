@@ -55,6 +55,8 @@ def generate(path: str) -> None:
                 _, _, key, vel_range = match.groups()
 
                 key = key.replace('s', '#').lower().strip()
+                if '_chord' in key:
+                    key = key.replace('_chord', '') + '1'
 
                 vel_range = vel_range.lower().strip()
                 if vel_range == 'low':
