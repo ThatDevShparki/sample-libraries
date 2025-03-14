@@ -4,6 +4,7 @@ from pathlib import Path
 
 import click
 
+from sfz.midi import note_name_to_number
 from sfz.sfz import SfzHeader
 
 SAMPLE_PATTERN = re.compile(
@@ -52,19 +53,24 @@ def generate(path: str) -> None:
                     print(f"found a file that doesn't match the pattern {file}")
                     continue
 
-                _, _, key, vel_range = match.groups()
+                _, _, key_name, vel_range = match.groups()
 
-                key = key.replace('s', '#').lower().strip()
-                if '_chord' in key:
-                    key = key.replace('_chord', '') + '1'
+                key_name = key_name.replace('s', '#').lower().strip()
+                if '_chord' in key_name:
+                    key_name = key_name.replace('_chord', '') + '1'
+                else:
+                    print(key_name)
+                    octave = int(key_name[-1])
+                    key_name = key_name[:-1] + str(octave + 1)
+                key_idx = str(note_name_to_number(key_name))
 
                 vel_range = vel_range.lower().strip()
                 if vel_range == 'low':
-                    low_samples.append((file, key))
+                    low_samples.append((file, key_idx))
                 elif vel_range == 'med':
-                    med_samples.append((file, key))
+                    med_samples.append((file, key_idx))
                 else:
-                    high_samples.append((file, key))
+                    high_samples.append((file, key_idx))
 
         # create sfz_groups
         sfz_low_group = SfzHeader(
