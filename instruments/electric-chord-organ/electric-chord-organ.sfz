@@ -1,5 +1,5 @@
 <control>
-default_path=./samples
+default_path=samples/
 
 <global>
 ampeg_attack=0.04

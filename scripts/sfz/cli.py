@@ -59,7 +59,6 @@ def generate(path: str) -> None:
                 if '_chord' in key_name:
                     key_name = key_name.replace('_chord', '') + '1'
                 else:
-                    print(key_name)
                     octave = int(key_name[-1])
                     key_name = key_name[:-1] + str(octave + 1)
                 key_idx = str(note_name_to_number(key_name))
@@ -135,7 +134,7 @@ def generate(path: str) -> None:
             'control',
             opcodes={
                 # 'default_path': samples_path.absolute(),
-                'default_path': './samples'
+                'default_path': 'samples/'
             },
             subheaders=[sfz_global],
         )
