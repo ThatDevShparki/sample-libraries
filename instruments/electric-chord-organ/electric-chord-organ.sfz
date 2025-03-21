@@ -5,6 +5,7 @@ default_path=samples/
 ampeg_attack=0.04
 ampeg_release=0.45
 amp_veltrack=0
+loop_mode=loop_sustain
 
 <group>
 lovel=1

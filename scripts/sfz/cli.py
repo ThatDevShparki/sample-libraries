@@ -127,15 +127,17 @@ def generate(path: str) -> None:
         sfz_global = SfzHeader(
             'global',
             subheaders=[sfz_low_group, sfz_med_group, sfz_high_group],
-            opcodes={'ampeg_attack': 0.04, 'ampeg_release': 0.45, 'amp_veltrack': 0},
+            opcodes={
+                'ampeg_attack': 0.04,
+                'ampeg_release': 0.45,
+                'amp_veltrack': 0,
+                'loop_mode': 'loop_sustain',
+            },
         )
 
         sfz_control = SfzHeader(
             'control',
-            opcodes={
-                # 'default_path': samples_path.absolute(),
-                'default_path': 'samples/'
-            },
+            opcodes={'default_path': 'samples/'},
             subheaders=[sfz_global],
         )
 
