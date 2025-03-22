@@ -133,7 +133,7 @@ def generate(path: str) -> None:
                 'amp_veltrack': 0,
                 'loop_mode': 'loop_sustain',
                 'loop_start': 10000,
-                'loop_end': 40000,
+                'loop_end': 30000,
             },
         )
 
