@@ -134,6 +134,7 @@ def generate(path: str) -> None:
                 'loop_mode': 'loop_sustain',
                 'loop_start': 10000,
                 'loop_end': 20000,
+                'loop_type': 'alternate',
             },
         )
 
